@@ -55,3 +55,9 @@
     border: none !important;
     border-bottom: 1px solid #D0D5DD !important;
 }
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background-color: #fff;
+    color: $text-color;
+    border: none;
+}
