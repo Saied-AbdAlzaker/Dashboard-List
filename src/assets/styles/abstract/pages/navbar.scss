@@ -61,3 +61,7 @@
     color: $text-color;
     border: none;
 }
+
+.p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext{
+    box-shadow: none;
+}
