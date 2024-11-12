@@ -1,0 +1,26 @@
+@import "../colors.scss";
+
+.mdc-linear-progress__bar-inner{
+    border-color: $main-color !important;
+}
+.home-content{
+    margin-top: 5rem;
+}
+
+.bg-home{
+    background-color: #F9F5F3;
+}
+.bg-section-one{
+    background-color: #F4DBD4;
+}
+
+// ._ngcontent-ng-c2355699050{
+//     background-color: $main-color !important;
+// }
+
+input[type="checkbox"]{
+    border: 1px solid $main-color;
+}
+input[type="checkbox"]:checked{
+    background-color: $main-color;
+}

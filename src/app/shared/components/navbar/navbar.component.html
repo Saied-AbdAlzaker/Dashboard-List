@@ -1,0 +1,39 @@
+<section class="py-3 bg-white">
+    <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center text-navbar position-relative mx-3">
+            <span class="nav-section"></span>
+            <img src="../../../../assets/image/navbar/gas-station-svgrepo-com.svg" class="ms-3"
+                alt="gas-station-svgrepo">
+            <h2 class="mx-2">2/3</h2>
+            <p class="m-0">Monitored<br>Stations</p>
+        </div>
+        <div class="d-flex align-items-center text-navbar position-relative mx-4">
+            <span class="nav-section"></span>
+            <img src="../../../../assets/image/navbar/rotate_right.svg" class="ms-3" alt="rotate_right">
+            <h3 class="mx-2">20s</h3>
+            <p class="m-0">Last<br>Update</p>
+        </div>
+        <div class="mx-3">
+            <span class="rounded-5 bg-nav py-2 my-3">
+                <a class="px-3 p-2 rounded-5 text-black bg-active-nav">TODAY</a>
+                <a class="px-3 p-2 rounded-5 text-black bg-active-nav">YESTERDAY</a>
+                <a class="px-3 p-2 rounded-5 text-black bg-active-nav">LAST WEEK</a>
+            </span>
+        </div>
+        <div class="d-flex align-items-center ms-5">
+            <div class="position-relative mx-3">
+                <img src="../../../../assets/image/navbar/arrow_right.svg" class="check-box" alt="arrow_right">
+                <p-calendar inputId="calendar-24h" placeholder="Start Date - Time" [(ngModel)]="datetime"
+                    [showTime]="true" />
+
+            </div>
+
+            <div class="position-relative mx-3">
+                <span class="nav-section-checkBox"></span>
+                <p-calendar inputId="calendar-24h" placeholder="End Date - Time" [(ngModel)]="datetimeEnd"
+                    [showTime]="true" />
+
+            </div>
+        </div>
+    </div>
+</section>

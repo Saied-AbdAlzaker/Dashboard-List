@@ -1,0 +1,57 @@
+@import "../colors.scss";
+
+
+.text-navbar {
+    color: $text-color;
+}
+
+.nav-section {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF7F5C;
+    left: 0px;
+    top: 70%;
+}
+
+.nav-section-checkBox {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: $main-color;
+    left: -20px;
+    top: 30%;
+}
+
+.check-box {
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 40px;
+}
+
+.dropdown-menu {
+    width: 50px;
+}
+
+
+
+.bg-nav {
+    background-color: #F9F5F3;
+}
+
+.bg-active-nav:hover {
+    background-color: #FF7F5C;
+}
+
+.example-form-field {
+    margin: 0 8px 16px 0;
+}
+
+
+//form field
+.p-inputtext {
+    border: none !important;
+    border-bottom: 1px solid #D0D5DD !important;
+}

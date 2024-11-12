@@ -1,0 +1,12 @@
+@import "../colors.scss";
+
+
+.brd-side{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.bg-active{
+    background-color: $main-color;
+    color: #fff;
+}

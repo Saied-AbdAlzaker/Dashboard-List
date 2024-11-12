@@ -1,0 +1,82 @@
+<section class=" p-3">
+    <div class="row">
+        <div class="col-md-8 ">
+            <div class="d-flex gap-3">
+                <div class="p-3 bg-section-one shadow w-25 my-2 rounded-4">
+                    <h2 class="mx-2 my-0">71,028 EGP</h2>
+                    <p class="m-0">Total Value</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_down.svg" alt="">2%</p>
+                </div>
+                <div class="p-3 bg-white shadow w-25 my-2 rounded-4">
+                    <h2 class="mx-2 my-0">20,000 m^3</h2>
+                    <p class="m-0">Total Sales</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_up.svg" alt="">50m3</p>
+                </div>
+                <div class="p-3 bg-white shadow w-25 my-2 rounded-4">
+                    <h2 class="mx-2 my-0">20,000 m^3</h2>
+                    <p class="m-0">Avg Value</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_down.svg" alt="">50m3</p>
+                </div>
+                <div class="p-3 bg-white shadow w-25 my-2 rounded-4">
+                    <h2 class="mx-2 my-0">1567</h2>
+                    <p class="m-0">Total Transacton Count</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_up.svg" alt="">20</p>
+                </div>
+            </div>
+
+            <div class="rounded-5 bg-white py-2 my-3 float-end">
+                <a class="px-3 p-2 rounded-5 text-black" routerLink="/graph" routerLinkActive="bg-active"><i
+                        class="fa-solid fa-signal mx-2"></i>Graph</a>
+                <a class="px-3 p-2 rounded-5 text-black" routerLink="/list" routerLinkActive="bg-active"><i
+                        class="fa-solid fa-table-list mx-2"></i>List</a>
+            </div>
+            <div class="home-content">
+                <router-outlet></router-outlet>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div>
+                <h2 class="text-center">Hourly Sales</h2>
+                <div id="hourly-sales">
+                    <canvas id="myChart">{{chart}}</canvas>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-center">Sales by station</h2>
+                <div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="../../../../assets/image/navbar/gas-station-svgrepo-com.svg"
+                                alt="gas-station-svgrepo" class="mb-3">
+                            <h3 class="mx-3">Station Name</h3>
+                        </div>
+                        <h3>62,721m3</h3>
+                    </div>
+                    <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+
+                    <div class="d-flex align-items-center justify-content-between my-3">
+                        <div class="d-flex align-items-center">
+                            <img src="../../../../assets/image/navbar/gas-station-svgrepo-com.svg"
+                                alt="gas-station-svgrepo" class="mb-3">
+                            <h3 class="mx-3">Station Name</h3>
+                        </div>
+                        <h3>62,721m3</h3>
+                    </div>
+                    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                        <div class="d-flex align-items-center">
+                            <img src="../../../../assets/image/navbar/gas-station-svgrepo-com.svg"
+                                alt="gas-station-svgrepo" class="mb-3">
+                            <h3 class="mx-3">Station Name</h3>
+                        </div>
+                        <h3 class="ms-5">NM</h3>
+                    </div>
+                    <mat-progress-bar mode="determinate"></mat-progress-bar>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
