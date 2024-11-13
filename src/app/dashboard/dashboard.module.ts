@@ -2,18 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { DashboardComponent } from './dashboard.component';
-import { HomeComponent } from './components/home/home.component';
 import { SharedModule } from '../shared/shared.module';
-import { GraphComponent } from './components/graph/graph.component';
-import { ListComponent } from './components/list/list.component';
+import { HomeComponent } from './home/home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    HomeComponent,
-    GraphComponent,
-    ListComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
