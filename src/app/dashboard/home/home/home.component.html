@@ -3,22 +3,22 @@
         <div class="col-md-8 ">
             <div class="d-flex gap-3">
                 <div class="p-3 bg-section-one shadow w-25 my-2 rounded-4">
-                    <h2 class="mx-2 my-0">71,028 EGP</h2>
+                    <h2 class="mx-2 my-0">{{price}}</h2>
                     <p class="m-0">Total Value</p>
-                    <p><img src="../../../../assets/image/home/arrow_drop_down.svg" alt="">2%</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_down.svg" alt="">{{totalValue| percent}}</p>
                 </div>
                 <div class="p-3 bg-white shadow w-25 my-2 rounded-4">
-                    <h2 class="mx-2 my-0">20,000 m^3</h2>
+                    <h2 class="mx-2 my-0">{{sales}}</h2>
                     <p class="m-0">Total Sales</p>
-                    <p><img src="../../../../assets/image/home/arrow_drop_up.svg" alt="">50m3</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_up.svg" alt="">{{AvgValue}}</p>
                 </div>
                 <div class="p-3 bg-white shadow w-25 my-2 rounded-4">
-                    <h2 class="mx-2 my-0">20,000 m^3</h2>
+                    <h2 class="mx-2 my-0">{{sales}}</h2>
                     <p class="m-0">Avg Value</p>
-                    <p><img src="../../../../assets/image/home/arrow_drop_down.svg" alt="">50m3</p>
+                    <p><img src="../../../../assets/image/home/arrow_drop_down.svg" alt="">{{AvgValue}}</p>
                 </div>
                 <div class="p-3 bg-white shadow w-25 my-2 rounded-4">
-                    <h2 class="mx-2 my-0">1567</h2>
+                    <h2 class="mx-2 my-0">{{count}}</h2>
                     <p class="m-0">Total Transacton Count</p>
                     <p><img src="../../../../assets/image/home/arrow_drop_up.svg" alt="">20</p>
                 </div>
@@ -51,7 +51,7 @@
                                 alt="gas-station-svgrepo" class="mb-3">
                             <h3 class="mx-3">Station Name</h3>
                         </div>
-                        <h3>62,721m3</h3>
+                        <h3>{{totalSales}}</h3>
                     </div>
                     <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
 
@@ -61,7 +61,7 @@
                                 alt="gas-station-svgrepo" class="mb-3">
                             <h3 class="mx-3">Station Name</h3>
                         </div>
-                        <h3>62,721m3</h3>
+                        <h3>{{totalSales}}</h3>
                     </div>
                     <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
                     <div class="d-flex align-items-center justify-content-between mt-3">
